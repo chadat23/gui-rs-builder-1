@@ -9,7 +9,7 @@ fn main() {
     window
         .set_width(GUILength::from_pixels(850.))
         .set_height(GUILength::from_pixels(250.))
-        .set_title(String::from("Hello"));
+        .set_title("Hello");
 
     let resources = GUIResources::default();
     
