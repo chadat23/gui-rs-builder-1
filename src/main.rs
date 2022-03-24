@@ -1,7 +1,7 @@
 use gui_rs::guiresources::GUIResources;
 use gui_rs::guiposition::guilengths::{GUILength, SetLength};
-use gui_rs::guiprocessing::gui_processing;
-use gui_rs::guiwindow::GUIWindow;
+use gui_rs::guiprocessing;
+use gui_rs::guiwidgets::GUIWindow;
 
 fn main() {
     // let window = GUIWindow::new().set_width(400).set_height(600).set_title(String::from("Hello"));
@@ -12,6 +12,6 @@ fn main() {
         .set_title("Hello");
 
     let resources = GUIResources::default();
-    
-    gui_processing(window, resources);
+
+    guiprocessing::gui_processing(window, resources);
 }
