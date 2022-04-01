@@ -13,7 +13,7 @@ fn main() {
     window.set_background_color(GUIColor::from_rgba_u8u8u8u8(50, 50, 50, 255));
 
     let button = GUIButton::default();
-    window.add_area_child(Box::from(button));
+    window.add_child(Box::from(button));
 
     let resources = GUIResources::default();
 
