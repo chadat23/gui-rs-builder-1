@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 gui_rs = { path = "../gui-rs", version = "*" }
+uuid = { version = "0.8", features = ["v4"] }

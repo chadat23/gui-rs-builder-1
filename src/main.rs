@@ -1,3 +1,5 @@
+use uuid::Uuid;
+
 use gui_rs::guiprocessing;
 use gui_rs::guiproperties::guiposition::{GUISize, GUIPosition, GUILength};
 use gui_rs::guiproperties::guitraits::*;
@@ -27,7 +29,9 @@ fn main() {
         position: GUIPosition::from_pixels(300., 255.),
         radius: GUILength::from_pixels(20.),
         background_color: GUIColor::from_rgba_u8u8u8u8(0, 185, 0, 255),
-        children: Vec::new()
+        children: Vec::new(),
+        name: "my button2",
+        id: Uuid::new_v4().as_u128(),
     };
     window.add_child(Box::from(button2));
 
